@@ -78,7 +78,7 @@ class _PriceScreenState extends State<PriceScreen> {
         CoinCard(
           baseCoin: base,
           quoteCoin: selectedCurrency,
-          rate: rates[base],
+          rate: rates[base] ?? '?',
         ),
       );
     }
